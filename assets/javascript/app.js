@@ -13,47 +13,46 @@ $(document).ready(function(){
 	var r = 0;
 	var guess;
 	var questions = [
-
-		q1 = {question: 'How many Playstation 2 did Sony sell? (In Millions)',
+		{question: 'How many Playstation 2 consoles did Sony sell? (In Millions)',
 			right: 155,
 			choices: [35, 86, 102, 155]
 			},
-		q2= {question: 'What was the first game Mario appeared in?',
+		{question: 'What was the first game Mario appeared in?',
 			right: 'Donkey Kong',
 			choices:['Super Mario World', 'Super Mario 64', 'Donkey Kong', 'Mario Bros'],
 		},
-		q3= {question: 'What color is Pac-Man?',
+		{question: 'What color is Pac-Man?',
 			right: 'Yellow',
 			choices:['Green', 'Red', 'Yellow', 'Orange'],
 		},
-		q4= {question: 'What is the best-selling game console of all time?',
+		{question: 'What is the best-selling game console of all time?',
 			right: 'Playstation 2',
 			choices:['Nintendo DS', 'Game Boy/Game Boy Color', 'Playstation 2', 'Wii'],
 		},
-		q5= {question: 'What is the most sold game of all time?',
+		{question: 'What is the most sold game of all time?',
 			right: 'Tetris',
 			choices:['Wii Sports', 'Minecraft', 'Grand Theft Auto V', 'Tetris'],
 		},
-		q6= {question: 'The Covenant are a military alien race in which game series?',
+		{question: 'The Covenant are a military alien race in which game series?',
 			right: 'Halo',
 			choices:['Alien: Isolation', 'Halo', 'Space Invaders', 'Doom'],
 		},
-		q7= {question: 'Which was the first Pokemon game to be released to Game Boy?',
+		{question: 'Which was the first Pokemon game to be released to Game Boy?',
 			right: 'Pokemon Red and Green',
 			choices:['Pokemon Red and Green', 'Pokemon Red and Blue', 'Pokemon Blue', 'Pokemon Yellow'],
 		},
-		q8= {question: 'How many mb is the biggest memory card offered by Nintendo for The GameCube?',
+		{question: 'How many mb is the biggest memory card offered by Nintendo for The GameCube?',
 			right: '64 Mb',
 			choices:['4 Mb', '16 Mb', '32 Mb', '64 Mb'],
 		},
-		q9= {question: 'How many presses per button does it take to wear out an Xbox One controller?',
+		{question: 'How many presses per button does it take to wear out an Xbox One controller?',
 			right: '3 million',
 			choices:['456 thousand', '757 thousand', '1.5 million', '3 million'],
 		},
-		q10= {question: 'Which company just released a console on March. 3 2017?',
+		{question: 'Which company just released a console on March 3, 2017?',
 			right: 'Nintendo',
 			choices:['Microsoft', 'Nintendo', 'Sony', 'Atari'],
-		},
+		}
 		
 	]
 	 var clock = {
@@ -138,7 +137,6 @@ $(document).ready(function(){
 			$('.questions').hide();;
 			clock.stop();
 			setTimeout(setQuestion, 3000);
-			var right = new Audio("assets/audio/right.mp3");
 			right.play();
 			correct++;
 		}  else {
